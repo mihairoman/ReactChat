@@ -1,8 +1,10 @@
-import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
-import registerServiceWorker from './registerServiceWorker'
+import { initMainRoutes } from './routes'
 
-ReactDOM.render(<App />, document.getElementById('root'))
-registerServiceWorker()
+const routes = initMainRoutes()
+
+ReactDOM.render(
+  routes,
+  document.getElementById('root')
+)
